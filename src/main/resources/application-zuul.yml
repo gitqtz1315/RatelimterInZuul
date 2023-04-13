@@ -1,0 +1,6 @@
+zuul:
+  prefix: /api
+  routes:
+    greeting-service:
+      path: /hello-world/**
+      url: forward:/hello-world
